@@ -1,8 +1,10 @@
 from django.urls import path
 from . import views
+
+
 urlpatterns = [
-    path("/booktable", views.contact,name="contact"),
-    path("", views.index,name="home"),
-   
+    path('', views.index, name="home"),
+    path('contact/', views.contact, name="contact"),
+    path('tablebooking/', views.tablebooking, name="Book Table"),
 
 ]
